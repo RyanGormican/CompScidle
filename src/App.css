@@ -38,6 +38,28 @@ nav h1 {
   height: 300px;
   margin-top: 60px;
 }
+.inputline1 {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+.inputline2 {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px;
+}
+.inputline3 {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px;
+}
 #correct {
   background-color: #528d4e;
 }
