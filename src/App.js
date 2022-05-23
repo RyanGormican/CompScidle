@@ -15,8 +15,10 @@ function App() {
     </h1>
     </nav>
       <Context.Provider value ={{tiles, setTiles}}>
+    <div className="space">
     <Tiles />
     <Input />
+     </div>
       </Context.Provider>
     </div>
   );
