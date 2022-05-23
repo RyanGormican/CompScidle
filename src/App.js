@@ -1,5 +1,5 @@
 
-import './App.css';
+import "./App.css";
 import Input from "./components/Input";
 import Tiles from "./components/Tiles";
 
