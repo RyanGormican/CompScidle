@@ -7,7 +7,7 @@
   color: white;
 }
 nav {
-  height: 50px;
+  height: 60px;
   width: 100%;
   margin: 0;
   border-bottom: 1px solid grey;
@@ -81,6 +81,9 @@ nav h1 {
 }
 #incorrect {
   background-color: #3a393c;
+}
+#special {
+  width: 100px;
 }
 .tiles {
   height: 550px;
