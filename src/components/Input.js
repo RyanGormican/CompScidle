@@ -6,15 +6,15 @@ function Input(){
   const bottomkeys = ["Z", "X", "C", "V", "B", "N", "M"];
   return <div className="input">
     <div className="inputline1">{topkeys.map((key)=> {
-       return <div>{key} </div>; 
+       return <InputKey />;
     }}}
    </div>
   <div className="inputline2">{middlekeys.map((key)=> {
-       return <div>{key} </div>; 
+       return <InputKey />;
     }}}
      </div>
   <div className="inputline3">{bottomkeys.map((key)=> {
-       return <div>{key} </div>; 
+       return <InputKey />;
     }}}
      </div>
     
