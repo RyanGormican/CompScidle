@@ -19,7 +19,7 @@ function Input(){
      </div>
     
     
-    </div>;
+    </div>
 
 );
 }
