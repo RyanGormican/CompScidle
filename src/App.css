@@ -32,3 +32,16 @@ nav h1 {
   color: white;
   font-family: Georgia, Helvetica, sans-serif;
 }
+.tiles {
+  height: 550px;
+  width: 450px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.tilerow {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+}
