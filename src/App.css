@@ -6,4 +6,11 @@
   /* display: flex; */
   color: white;
 }
-
+nav {
+  height: 30px;
+  width: 100%;
+  margin: 0;
+  border-bottom: 1px solid black;
+  display: grid;
+  place-items: center;
+}
