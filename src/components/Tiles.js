@@ -6,8 +6,8 @@ function Tiles() {
   const [tiles, setBoard] = useState(tileDefault);
  return (
    <div className ="tiles">
-   {" "}
-  <div className="tilerow"> 
+    {" "}
+    <div className="tilerow"> 
     <Character inputVal={0} charPos ={0}/>
     <Character inputVal={0} charPos ={1}/>
     <Character inputVal={0} charPos ={2}/>
