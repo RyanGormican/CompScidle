@@ -20,3 +20,15 @@ nav h1 {
   color: white;
   font-size: 45px;
 }
+.character {
+  flex: 33%;
+  height: 100%;
+  border: 1px solid black;
+  margin: 5px;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  font-weight: bolder;
+  color: white;
+  font-family: Georgia, Helvetica, sans-serif;
+}
