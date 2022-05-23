@@ -1,5 +1,5 @@
 import React from "react";
-import InputKey from "./InputKey.js";
+import InputKey from "./InputKey";
 function Input(){
    const topkeys = ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"];
   const middlekeys = ["A", "S", "D", "F", "G", "H", "J", "K", "L"];
