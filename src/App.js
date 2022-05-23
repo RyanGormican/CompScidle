@@ -4,6 +4,7 @@ import Input from "./components/Input";
 import Tiles from "./components/Tiles";
 
 function App() {
+    const [tiles, setTiles] = useState(tileDefault);
   return (
     <div className="App">
     <nav>
