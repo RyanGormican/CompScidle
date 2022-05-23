@@ -82,6 +82,14 @@ nav h1 {
 #incorrect {
   background-color: #3a393c;
 }
+.space {
+  height: calc(100vh - 170px);
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  flex-direction: column;
+}
 #special {
   width: 100px;
 }
