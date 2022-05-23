@@ -3,7 +3,7 @@ import "./App.css";
 import Input from "./components/Input";
 import Tiles from "./components/Tiles";
 import { tileDefault } from "./components/TilesGen";
-import { createContext } from "react";
+import { createContext, useState } from "react";
 
 export const Context = createContext();
 function App() {
