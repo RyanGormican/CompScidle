@@ -1,7 +1,7 @@
 import React from "react";
 
 function Input(){
-  return <div>Input</div>;
+  return <div className="input"></div>;
 }
 
 export default Input;
