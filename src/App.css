@@ -32,6 +32,21 @@ nav h1 {
   color: white;
   font-family: Georgia, Helvetica, sans-serif;
 }
+
+.input {
+  width: 700px;
+  height: 300px;
+  margin-top: 60px;
+}
+#correct {
+  background-color: #528d4e;
+}
+#wrongspot {
+  background-color: #b49f39;
+}
+#incorrect {
+  background-color: #3a393c;
+}
 .tiles {
   height: 550px;
   width: 450px;
