@@ -5,7 +5,7 @@ function Character({ inputVal, charPos}) {
    <div className ="character">
      Character
   </div>
-    )
+    
 }
 
 export default Character;
