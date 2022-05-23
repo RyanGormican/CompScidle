@@ -3,7 +3,7 @@ import Character from "./Character";
 import { tileDefault } from "./TilesGen";
 
 function Tiles() {
-  const [tiles, setTiles] = useState(tileDefault);
+  const [tiles, setBoard] = useState(tileDefault);
  return (
    <div className ="tiles">
    {" "}
