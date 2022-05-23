@@ -14,11 +14,11 @@ function Input(){
     })}
      </div>
   <div className="inputline3">
-    <InputKey InputValue ={"ENTER"} />
+    <InputKey InputValue ={"ENTER"} specialInput />
      {bottomkeys.map((inputkey) => {
        return <InputKey InputValue={inputkey} />;
     })}
-        <InputKey InputValue ={"DELETE"} />
+        <InputKey InputValue ={"DELETE"} specialInput />
      </div>
     
     
