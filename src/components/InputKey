@@ -1,6 +1,6 @@
 import React from "react";
 function InputKey({ InputVal }) {
-  return <div className = "Inputkey"> { InputVal } </div> ;
+  return <div className = "Inputkey"> {InputVal} </div> ;
 }
 
 export default InputKey;
