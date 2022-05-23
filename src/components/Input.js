@@ -13,9 +13,12 @@ function Input(){
        return <InputKey InputValue={inputkey} />;
     })}
      </div>
-  <div className="inputline3">{bottomkeys.map((inputkey) => {
+  <div className="inputline3">
+    <InputKey InputValue ={"ENTER"} />
+     {bottomkeys.map((inputkey) => {
        return <InputKey InputValue={inputkey} />;
     })}
+        <InputKey InputValue ={"DELETE"} />
      </div>
     
     
