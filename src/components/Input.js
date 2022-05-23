@@ -5,16 +5,16 @@ function Input(){
   const middlekeys = ["A", "S", "D", "F", "G", "H", "J", "K", "L"];
   const bottomkeys = ["Z", "X", "C", "V", "B", "N", "M"];
   return ( <div className="input">
-    <div className="inputline1">{topkeys.map((key) => {
-       return <InputKey InputValue={key} />;
+    <div className="inputline1">{topkeys.map((inputkey) => {
+       return <InputKey InputValue={inputkey} />;
     })}
    </div>
-  <div className="inputline2">{middlekeys.map((key) => {
-       return <InputKey InputValue={key} />;
+  <div className="inputline2">{middlekeys.map((inputkey) => {
+       return <InputKey InputValue={inputkey} />;
     })}
      </div>
-  <div className="inputline3">{bottomkeys.map((key) => {
-       return <InputKey InputValue={key} />;
+  <div className="inputline3">{bottomkeys.map((inputkey) => {
+       return <InputKey InputValue={inputkey} />;
     })}
      </div>
     
