@@ -8,6 +8,8 @@ function App() {
     <h1> CompScidle
     </h1>
     </nav>
+    <Tiles />
+    <Input />
     </div>
   );
 }
