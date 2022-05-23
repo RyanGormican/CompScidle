@@ -4,7 +4,8 @@ import { tileDefault } from "./TilesGen";
 
 function Tiles() {
   const [tiles, setTiles] = useState(tileDefault);
- return <div className ="tiles">
+ return (
+   <div className ="tiles">
   <div className="tilerow"> 
     <Character inputVal={0} charPos ={0}/>
     <Character inputVal={0} charPos ={1}/>
@@ -48,6 +49,7 @@ function Tiles() {
     <Character inputVal={5} charPos ={4}/>
       </div>
  </div>; 
+);
 }
 
 export default Tiles;
