@@ -5,6 +5,7 @@ function InputKey({ InputValue, specialInput }) {
   const getKey = () => {
     if (InputValue === "ENTER"){
         if (tileAt.charPos !== 5) return;
+       setTileAt({tileattemp: tileAt.tileattemp +1, charPos: 0 });
     }
    else
    {
