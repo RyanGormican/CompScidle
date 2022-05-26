@@ -15,7 +15,7 @@ function App() {
     <h1> CompScidle
     </h1>
     </nav>
-      <Context.Provider value ={{tiles, setTiles tileAt, setTileAt}}>
+      <Context.Provider value ={{tiles, setTiles, tileAt, setTileAt}}>
     <div className="space">
     <Tiles />
     <Input />
