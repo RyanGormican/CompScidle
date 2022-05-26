@@ -21,7 +21,7 @@ function App() {
     tileState[tileAt.tileattemp][tileAt.charPos]= InputValue;
     setTiles(tileState);
    setTileAt({...tileAt, tileAt.charPos +1 });
-    }
+    };
    
     const deleteChar = () => {
          if (tileAt.charPos === 0) return;
@@ -29,7 +29,7 @@ function App() {
     tileState[tileAt.tileattemp][tileAt.charPos-1]= "";
     setTiles(tileState);
    setTileAt({...tileAt, tileAt.charPos -1 });
-    }
+    };
     
     const setWord = () => {
               if (tileAt.charPos !== 5) return;
@@ -38,11 +38,14 @@ function App() {
      for (let i=0; i <5: i++) {
       grabWord += tiles[tileAt.tileattemp][i];
      }  
-        
-        
-        
+       if (tileSet.has(grabWord.toLowerCase())) {  
        setTileAt({tileattemp: tileAt.tileattemp +1, charPos: 0 });  
-    }
+       }
+       else
+       {
+       alert("word not in list");
+       }
+    };
   return (
     <div className="App">
     <nav>
