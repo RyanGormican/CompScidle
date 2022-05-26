@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from "react";
 import { Context } from "../App";
 
 function Character({ inputVal, charPos}) {
-  const { tiles, theWord, tileAt, removeTiles, setRemoveTiles } = useContext(Context);
+  const { tiles, theWord, tileAt, setRemoveTiles } = useContext(Context);
   const character = tiles[inputVal][charPos];
   
   const correctSpot = theWord.toUpperCase()[charPos] === character;
@@ -10,7 +10,7 @@ function Character({ inputVal, charPos}) {
   const characterState =  tileAt.charPos > charPos && (correctSpot ? "correct" : wrongSpot ? "wrongspot": "incorrect");
   
   useEffect(() => {
-    if (character != "" && !correctSpot && !wrongSpot) {
+    if (character !== "" && !correctSpot && !wrongSpot) {
      setRemoveTiles((prev) => [...prev, character]);
     }
   }, [tileAt.tileattemp] );
