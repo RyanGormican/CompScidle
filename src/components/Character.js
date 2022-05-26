@@ -6,7 +6,7 @@ function Character({ inputVal, charPos}) {
   const character = tiles[inputVal][charPos];
   
   const correctSpot = theWord.toUpperCase()[charPos] === character;
-  const wrongSpot = !correctSpot && character !== "" && theWord.includes(character);
+  const wrongSpot = !correctSpot && character !== "" && theWord.toUpperCase().includes(character);
   const characterState =  tileAt.tileattemp > inputVal && (correctSpot ? "correct" : wrongSpot ? "wrongspot": "incorrect");
   
   useEffect(() => {
