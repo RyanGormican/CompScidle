@@ -45,6 +45,10 @@ function App() {
        {
        alert("word not in list");
        }
+     if (grabWord === theWord)
+     {
+       aler("You win!");  
+     };
     };
   return (
     <div className="App">
