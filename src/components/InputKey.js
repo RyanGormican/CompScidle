@@ -4,7 +4,7 @@ function InputKey({ InputValue, specialInput }) {
  const { tiles,setTiles, tileAt, setTileAt} = useContext(Context);
   const getKey = () => {
     if (InputValue === "ENTER"){
-        
+        if (tileAt.charPos !== 5) return;
     }
    else
    {
