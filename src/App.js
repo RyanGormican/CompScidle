@@ -11,6 +11,7 @@ function App() {
     const [tileAt, setTileAt] = useState{{ charPos: 0, tileattemp: 0 });
                                          
     const setChar = (InputValue) => {
+           if (tileAt.charPos > 4) return;
          const tileState =  [...tiles];
     tileState[tileAt.tileattemp][tileAt.charPos]= InputValue;
     setTiles(tileState);
@@ -28,7 +29,6 @@ function App() {
     const setWord = () => {
               if (tileAt.charPos !== 5) return;
        setTileAt({tileattemp: tileAt.tileattemp +1, charPos: 0 });  
-        
     }
   return (
     <div className="App">
