@@ -53,15 +53,14 @@ function App() {
        alert("word not in list");
        }
 
-     if (grabWord == theWord.toUpperCase())
+     if (grabWord === theWord)
      {
       setGameState({gameState: true, guessWord: true });
       return;
      }
        console.log(grabWord);
        console.log(theWord);
-       console.log(theWord.toUpperCase());
-       console.log(grabWord === theWord.toUpperCase());
+       console.log(grabWord === theWord);
         if (tileAt.tileattemp === 5)
         {
              setGameState({gameState: true, guessWord: false }); 
