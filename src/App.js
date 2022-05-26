@@ -52,11 +52,14 @@ function App() {
        {
        alert("word not in list");
        }
-     if (grabWord.toLowerCase() === theWord.toLowerCase())
+
+     if (grabWord === theWord)
      {
       setGameState({gameState: true, guessWord: true });
       return;
      }
+       console.log(grabWord);
+       console.log(theWord);
         if (tileAt.tileattemp === 5)
         {
              setGameState({gameState: true, guessWord: false }); 
