@@ -4,14 +4,10 @@ function InputKey({ InputValue, specialInput }) {
  const { tiles,setTiles, tileAt, setTileAt, setChar, deleteChar, setWord} = useContext(Context);
   const getKey = () => {
     if (InputValue === "ENTER"){
-    setWord()
+    setWord();
     }
    else if(InputValue === "DELETE"){
-    if (tileAt.charPos === 0) return;
-        const tileState =  [...tiles];
-    tileState[tileAt.tileattemp][tileAt.charPos-1]= "";
-    setTiles(tileState);
-   setTileAt({...tileAt, tileAt.charPos -1 });
+   deleteChar();
    }
    else
    {
