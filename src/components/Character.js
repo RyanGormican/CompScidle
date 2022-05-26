@@ -2,16 +2,17 @@ import React, { useContext } from "react";
 import { Context } from "../App";
 
 function Character({ inputVal, charPos}) {
-  const { tiles, theWord, tileAt } = useContext(Context);
+  const { tiles, theWord, tileAt, removeTiles, setRemoveTiles } = useContext(Context);
   const character = tiles[inputVal][charPos];
   
   const correctSpot = theWord[charPos] === character;
   const wrongSpot = !correctSpot && character !== "" && theWord.includes(character);
   const characterState =  tileAt.charPos > charPos && (correctSpot ? "correct" : wrongSpot ? "wrongspot": "incorrect");
   
-  use effect(() => {
-    
-    
+  useEffect(() => {
+    if (character != "" && !correctsSpot && !wrongSpot) {
+     
+    }
   }, [tileAt.tileattemp] );
   
   
