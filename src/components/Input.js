@@ -17,15 +17,15 @@ function Input(){
       else
       {
       topkeys.forEach((key) => {
-         if(event.key === key){
+         if(event.key.toLowerCase() === key.toLowerCase()){
           setChar(key);
          }
       middlekeys.forEach((key) => {
-         if(event.key === key){
+         if(event.key.toLowerCase() === key.toLowerCase()){
           setChar(key);
          }
       bottomkeys.forEach((key) => {
-         if(event.key === key){
+         if(event.key.toLowerCase() === key.toLowerCase()){
           setChar(key);
          }
       }
