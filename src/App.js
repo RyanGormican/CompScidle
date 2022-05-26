@@ -44,7 +44,7 @@ function App() {
               if (tileAt.charPos !== 5) return;
         
      let grabWord ="";
-     for (let i=0; i <5: i++) {
+     for (let i=0; i <5; i++) {
       grabWord += tiles[tileAt.tileattemp][i];
      }  
        if (tileSet.has(grabWord.toLowerCase())) {  
@@ -64,6 +64,8 @@ function App() {
              setGameState({gameState: true, guessWord: false }); 
         }
     };
+
+    };
   return (
     <div className="App">
     <nav>
@@ -74,7 +76,7 @@ function App() {
     <div className="space">
     <Tiles />
                        
-     {gameState.gameState? <GameState /> : <Input />
+     {gameState.gameState ? <GameState /> : <Input />
      </div>
       </Context.Provider>
     </div>
