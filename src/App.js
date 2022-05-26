@@ -10,6 +10,7 @@ function App() {
     const [tiles, setTiles] = useState(tileDefault);
     const [tileAt, setTileAt] = useState{{ charPos: 0, tileattemp: 0 });
     const [tileSet, setTileSet] = useState(new Set());
+    const [removeTiles, setRemoveTiles] = useState([]);
     const theWord = "CODER";
   useEffect(() => {
      getTileSet().then((words)=> {
