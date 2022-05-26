@@ -46,14 +46,14 @@ function App() {
       grabWord += tiles[tileAt.tileattemp][i];
      }  
        if (tileSet.has(grabWord.toLowerCase())) {  
-       setTileAt({tileattemp: tileAt.tileattemp +1, charPos: 0 });  
+       setTileAt({tileattemp: tileAt.tileattemp + 1, charPos: 0 });  
        }
        else
        {
        alert("word not in list");
        }
 
-     if (grabWord === theWord)
+     if (grabWord.toLowerCase() === theWord)
      {
       setGameState({gameState: true, guessWord: true });
       return;
