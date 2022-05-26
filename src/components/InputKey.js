@@ -14,7 +14,7 @@ function InputKey({ InputValue, specialInput, removed }) {
    setChar(InputValue);
    }
   };
-  return (<div className="Inputkey" id ={specialInput > "special"; removed && "removed"} onClick=(getKey)> {InputValue} </div>);
+  return (<div className="Inputkey" id ={specialInput ? "special": removed && "removed"} onClick=(getKey)> {InputValue} </div>);
 }
 
 export default InputKey;
