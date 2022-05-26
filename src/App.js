@@ -53,7 +53,7 @@ function App() {
        alert("word not in list");
        }
 
-     if (grabWord === theWord)
+     if (grabWord === theWord.toUpperCase())
      {
       setGameState({gameState: true, guessWord: true });
       return;
