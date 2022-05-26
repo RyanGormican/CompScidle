@@ -60,7 +60,9 @@ function App() {
         if (tileAt.tileattemp === 5)
         {
              setGameState({gameState: true, guessWord: false }); 
+             return;
         }
+       
     };
 
    
