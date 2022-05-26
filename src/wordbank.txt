@@ -2322,7 +2322,6 @@ basic
 block		
 board	
 cache		
-cd-rom	
 click		
 close		
 cobol		
