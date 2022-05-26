@@ -1,6 +1,4 @@
-Abort		
-Add-in		
-Add-on		
+Abort			
 Algol		
 Apple		
 Arial		
@@ -39,14 +37,12 @@ Media
 Micro		
 Modem	
 Morph		
-Mouse	
-MS-Dos		
+Mouse			
 Octal		
 Paint		
 Panel		
 Patch	
 Pixel		
-Pop-up	
 Proxy		
 Purge		
 Query		
