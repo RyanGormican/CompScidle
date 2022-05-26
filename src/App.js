@@ -10,7 +10,7 @@ function App() {
     const [tiles, setTiles] = useState(tileDefault);
     const [tileAt, setTileAt] = useState{{ charPos: 0, tileattemp: 0 });
                                          
-    const setChar = () => {
+    const setChar = (InputValue) => {
          const tileState =  [...tiles];
     tileState[tileAt.tileattemp][tileAt.charPos]= InputValue;
     setTiles(tileState);
