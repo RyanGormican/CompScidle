@@ -11,7 +11,7 @@ function Character({ inputVal, charPos}) {
   
   useEffect(() => {
     if (character != "" && !correctsSpot && !wrongSpot) {
-     
+     setRemoveTiles({...removeTiles, character]);
     }
   }, [tileAt.tileattemp] );
   
