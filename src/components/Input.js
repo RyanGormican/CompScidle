@@ -41,17 +41,17 @@ function Input(){
    }, [grabInput]);
   return ( <div className="input" onKeyDown ={grabInput}>
     <div className="inputline1">{topkeys.map((inputkey) => {
-       return <InputKey InputValue={inputkey} removed ={removeTiles.includes(key)}/>;
+       return <InputKey InputValue={inputkey} removed ={removeTiles.includes(inputkey)}/>;
     })}
    </div>
   <div className="inputline2">{middlekeys.map((inputkey) => {
-       return <InputKey InputValue={inputkey} removed ={removeTiles.includes(key)} />;
+       return <InputKey InputValue={inputkey} removed ={removeTiles.includes(inputkey)} />;
     })}
      </div>
   <div className="inputline3">
     <InputKey InputValue ={"ENTER"} specialInput />
      {bottomkeys.map((inputkey) => {
-       return <InputKey InputValue={inputkey} removed ={removeTiles.includes(key)} />;
+       return <InputKey InputValue={inputkey} removed ={removeTiles.includes(inputkey)} />;
     })}
         <InputKey InputValue ={"DELETE"} specialInput />
      </div>
