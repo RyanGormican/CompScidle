@@ -1,5 +1,5 @@
-import tileSet from "./wordbank.txt";
-import todaySet from "./todaybank.txt";
+import tileSet from "../wordbank.txt";
+import todaySet from "../todaybank.txt";
 export const tileDefault = [
 ["","","","",""],
 ["","","","",""],
