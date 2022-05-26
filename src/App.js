@@ -8,6 +8,7 @@ import { createContext, useState } from "react";
 export const Context = createContext();
 function App() {
     const [tiles, setTiles] = useState(tileDefault);
+    const [tileAt, setTileAt] = useState{{ charPos: 0, tileattemp: 0 });
   return (
     <div className="App">
     <nav>
