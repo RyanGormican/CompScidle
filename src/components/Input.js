@@ -2,7 +2,7 @@ import React, {useCallback, useContext, useEffect } from "react";
 import InputKey from "./InputKey";
 import { Context } from "../App";
 function Input(){
- const { setChar, deleteChar, setWord} = useContext(Context);
+ const { setChar, deleteChar, setWord, removeTiles} = useContext(Context);
    const topkeys = ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"];
   const middlekeys = ["A", "S", "D", "F", "G", "H", "J", "K", "L"];
   const bottomkeys = ["Z", "X", "C", "V", "B", "N", "M"];
@@ -38,17 +38,17 @@ function Input(){
    }, [grabInput]);
   return ( <div className="input" onKeyDown ={grabInput}>
     <div className="inputline1">{topkeys.map((inputkey) => {
-       return <InputKey InputValue={inputkey} />;
+       return <InputKey InputValue={inputkey} removed ={removeTiles.includes(key)}/>;
     })}
    </div>
   <div className="inputline2">{middlekeys.map((inputkey) => {
-       return <InputKey InputValue={inputkey} />;
+       return <InputKey InputValue={inputkey} removed ={removeTiles.includes(key)} />;
     })}
      </div>
   <div className="inputline3">
     <InputKey InputValue ={"ENTER"} specialInput />
      {bottomkeys.map((inputkey) => {
-       return <InputKey InputValue={inputkey} />;
+       return <InputKey InputValue={inputkey} removed ={removeTiles.includes(key)} />;
     })}
         <InputKey InputValue ={"DELETE"} specialInput />
      </div>
