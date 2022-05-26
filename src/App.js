@@ -3,7 +3,8 @@ import "./App.css";
 import Input from "./components/Input";
 import Tiles from "./components/Tiles";
 import { getTileSet, tileDefault } from "./components/TilesGen";
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
+import GameState from "./components/GameState";
 
 export const Context = createContext();
 function App() {
