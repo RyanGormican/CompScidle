@@ -8,7 +8,7 @@ import { createContext, useState } from "react";
 export const Context = createContext();
 function App() {
     const [tiles, setTiles] = useState(tileDefault);
-    const [tileAt, setTileAt] = useState{{ charPos: 0, tileattemp: 0 });
+    const [tileAt, setTileAt] = useState({ charPos: 0, tileattemp: 0 });
     const [tileSet, setTileSet] = useState(new Set());
     const [removeTiles, setRemoveTiles] = useState([]);
     const [gameState, setGameState] = useState({gameState: false, guessWord:  false});
