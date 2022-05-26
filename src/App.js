@@ -2,7 +2,7 @@
 import "./App.css";
 import Input from "./components/Input";
 import Tiles from "./components/Tiles";
-import { tileDefault } from "./components/TilesGen";
+import { getTileSet, tileDefault } from "./components/TilesGen";
 import { createContext, useState } from "react";
 
 export const Context = createContext();
