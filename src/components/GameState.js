@@ -6,7 +6,7 @@ function GameState() {
   return (
     <div className="gameState">
     <h3>{gameState.guessWord ? "You guessed it Right!" : "You didn't guess the word!"}</h3>
-    <h1> The Word was: {theWord}</h1>
+    <h1> The word was: {theWord}</h1>
 {gameState.guessWord && (<h3> It was guessed in {tileAt.tileattemp} attempts</h3>
 )}
     </div>
