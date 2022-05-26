@@ -4,6 +4,14 @@ function Input(){
    const topkeys = ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"];
   const middlekeys = ["A", "S", "D", "F", "G", "H", "J", "K", "L"];
   const bottomkeys = ["Z", "X", "C", "V", "B", "N", "M"];
+   
+   
+   useEffect(() => {
+      document.addEventListener("keydown",grabInput)
+      return ( ) => { 
+         document.removeEventListener("keydown",grabInput)
+      };
+   }, [grabInput]);
   return ( <div className="input">
     <div className="inputline1">{topkeys.map((inputkey) => {
        return <InputKey InputValue={inputkey} />;
