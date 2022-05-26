@@ -69,7 +69,6 @@ function App() {
 
    
   return (
-     <body style ="background-color: #121212;">
     <div className="App">
     <nav>
     <h1> CompScidle
@@ -82,7 +81,6 @@ function App() {
      </div>
       </Context.Provider>
     </div>
-</body>
   );
 }
 
