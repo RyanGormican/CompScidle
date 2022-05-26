@@ -19,7 +19,6 @@ export const getTileSet = async () => {
  await fetch(todaySets).then((response) => response.text()).then((result) =>{
   const todaySet = result.split("\n");
   todayWord = todaySet[Math.floor(Math.random() * todaySets.length)]
-  todaySet = new Set(todaySet);
  });
  return { tileSet,todayWord };
 };
