@@ -12,7 +12,7 @@ function Input(){
          document.removeEventListener("keydown",grabInput)
       };
    }, [grabInput]);
-  return ( <div className="input">
+  return ( <div className="input" onKeyDown ={grabInput}>
     <div className="inputline1">{topkeys.map((inputkey) => {
        return <InputKey InputValue={inputkey} />;
     })}
