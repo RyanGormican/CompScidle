@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Context } from "../App";
 function InputKey({ InputValue, specialInput }) {
- const { tiles,setTiles, tileAt, setTileAt, setChar, deleteChar, setWord} = useContext(Context);
+ const { setChar, deleteChar, setWord} = useContext(Context);
   const getKey = () => {
     if (InputValue === "ENTER"){
     setWord();
