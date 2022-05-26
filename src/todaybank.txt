@@ -19,8 +19,7 @@ Debug
 Email	
 Eprom		
 Erase		
-Excel		
-E-zine		
+Excel			
 Field		
 Flash		
 Forth		
