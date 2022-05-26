@@ -16,7 +16,7 @@ function Character({ inputVal, charPos}) {
   }, [tileAt.tileattemp] );
   
   
-  return <div className ="character" id={}> {character} </div>;
+  return <div className ="character" id={characterState}> {character} </div>;
    
 }
 
