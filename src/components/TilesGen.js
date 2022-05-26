@@ -25,5 +25,5 @@ export const getWord = async () => {
   todayWord = todaySet[Math.floor(Math.random() * todaySet.length)]
   tileSet = new Set(tileArray);
  });
- return { tileSet , todaySet };
+ return { todaySet, todayWord};
 };
