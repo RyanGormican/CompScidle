@@ -20,14 +20,17 @@ function Input(){
          if(event.key.toLowerCase() === key.toLowerCase()){
           setChar(key);
          }
+           });
       middlekeys.forEach((key) => {
          if(event.key.toLowerCase() === key.toLowerCase()){
           setChar(key);
          }
+           });
       bottomkeys.forEach((key) => {
          if(event.key.toLowerCase() === key.toLowerCase()){
           setChar(key);
          }
+           });
       }
    })
    useEffect(() => {
