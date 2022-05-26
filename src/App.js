@@ -17,14 +17,11 @@ function App() {
   useEffect(() => {
      getTileSet().then((words)=> {
        setTileSet(words.tileSet);
-     });
-  }, []);
-      
-       useEffect(() => {
-     getWord().then((words)=> {
       setTheWord(words.todayWord);
      });
   }, []);
+      
+ 
     const setChar = (InputValue) => {
            if (tileAt.charPos > 4) return;
          const tileState =  [...tiles];
