@@ -52,7 +52,7 @@ function App() {
        {
        alert("word not in list");
        }
-     if (grabWord.toLowerCase() === theWord)
+     if (grabWord.toLowerCase() === theWord.toLowerCase())
      {
       setGameState({gameState: true, guessWord: true });
       return;
