@@ -11,6 +11,7 @@ function App() {
     const [tileAt, setTileAt] = useState{{ charPos: 0, tileattemp: 0 });
     const [tileSet, setTileSet] = useState(new Set());
     const [removeTiles, setRemoveTiles] = useState([]);
+    const [gameState, setGameState] = useState({gameState: false, guessWord:  false});
     const theWord = "CODER";
   useEffect(() => {
      getTileSet().then((words)=> {
@@ -57,7 +58,7 @@ function App() {
     <h1> CompScidle
     </h1>
     </nav>
-      <Context.Provider value ={{tiles, setTiles, tileAt, setTileAt, setChar, deleteChar, setWord, theWord, removeTiles, setRemoveTiles}}>
+      <Context.Provider value ={{tiles, setTiles, tileAt, setTileAt, setChar, deleteChar, setWord, theWord, removeTiles, setRemoveTiles, gameState, setGameState}}>
     <div className="space">
     <Tiles />
     <Input />
