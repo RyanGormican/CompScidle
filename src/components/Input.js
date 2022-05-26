@@ -5,7 +5,29 @@ function Input(){
   const middlekeys = ["A", "S", "D", "F", "G", "H", "J", "K", "L"];
   const bottomkeys = ["Z", "X", "C", "V", "B", "N", "M"];
    
-   
+   const grabInput = useCallback((event) => {
+      if(event.key === "Enter"){
+         setWord();
+      }
+      else if (event.key === "Backspace"){
+         deleteChar();
+      } 
+      else
+      {
+      topkeys.forEach((key) => {
+         if(event.key === key){
+          setChar(key);
+         }
+      middlekeys.forEach((key) => {
+         if(event.key === key){
+          setChar(key);
+         }
+      bottomkeys.forEach((key) => {
+         if(event.key === key){
+          setChar(key);
+         }
+      }
+   })
    useEffect(() => {
       document.addEventListener("keydown",grabInput)
       return ( ) => { 
