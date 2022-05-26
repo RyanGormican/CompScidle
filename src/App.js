@@ -25,7 +25,7 @@ function App() {
    setTileAt({...tileAt, tileAt.charPos -1 });
     }
     
-    const enterWord = () => {
+    const setWord = () => {
               if (tileAt.charPos !== 5) return;
        setTileAt({tileattemp: tileAt.tileattemp +1, charPos: 0 });  
         
@@ -36,7 +36,7 @@ function App() {
     <h1> CompScidle
     </h1>
     </nav>
-      <Context.Provider value ={{tiles, setTiles, tileAt, setTileAt}}>
+      <Context.Provider value ={{tiles, setTiles, tileAt, setTileAt, setChar, deleteChar, setWord}}>
     <div className="space">
     <Tiles />
     <Input />
