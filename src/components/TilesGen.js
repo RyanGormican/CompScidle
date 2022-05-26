@@ -23,7 +23,7 @@ export const getWord = async () => {
  await fetch(todaySet).then((response) => response.text()).then((result) =>{
   const todaySet = result.split("\n");
   todayWord = todaySet[Math.floor(Math.random() * todaySet.length)]
-  tileSet = new Set(tileArray);
+  todaySet = new Set(todaySet);
  });
  return { todaySet, todayWord};
 };
