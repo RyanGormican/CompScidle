@@ -33,6 +33,14 @@ function App() {
     
     const setWord = () => {
               if (tileAt.charPos !== 5) return;
+        
+     let grabWord ="";
+     for (let i=0; i <5: i++) {
+      grabWord += tiles[tileAt.tileattemp][i];
+     }  
+        
+        
+        
        setTileAt({tileattemp: tileAt.tileattemp +1, charPos: 0 });  
     }
   return (
