@@ -2,7 +2,7 @@ import React, { useContext }  from "react";
 import { Context } from "../App";
 
 function GameState() {
- const { gameState, setGameState, tileAt, theWord} = useContext(Context);
+ const { gameState, tileAt, theWord} = useContext(Context);
   return (
     <div className="gameState">
     <h3>{gameState.guessWord ? "You guessed right" : "You guessed wrong"}</h3>
