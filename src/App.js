@@ -49,8 +49,13 @@ function App() {
        }
      if (grabWord === theWord)
      {
-       aler("You win!");  
-     };
+      setGameState({gameState: true, guessWord: true });
+      return;
+     }
+        if (tileAt.tileattemp === 5)
+        {
+             setGameState({gameState: true, guessWord: false }); 
+        }
     };
   return (
     <div className="App">
