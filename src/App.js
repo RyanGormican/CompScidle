@@ -12,10 +12,17 @@ function App() {
     const [tileSet, setTileSet] = useState(new Set());
     const [removeTiles, setRemoveTiles] = useState([]);
     const [gameState, setGameState] = useState({gameState: false, guessWord:  false});
-    const theWord = "CODER";
+    const [theWord, setTheWord] = useState("");
   useEffect(() => {
      getTileSet().then((words)=> {
-       setTileSet(words.tileSet
+       setTileSet(words.tileSet);
+     
+  }, []);
+      
+       useEffect(() => {
+     getWord().then((words)=> {
+      setTheWord(words.todayWord);
+     
   }, []);
     const setChar = (InputValue) => {
            if (tileAt.charPos > 4) return;
