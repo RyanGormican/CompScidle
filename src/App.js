@@ -2,7 +2,7 @@
 import "./App.css";
 import Input from "./components/Input";
 import Tiles from "./components/Tiles";
-import { getTileSet, getWord, tileDefault } from "./components/TilesGen";
+import { getTileSet,  tileDefault } from "./components/TilesGen";
 import { createContext, useEffect, useState } from "react";
 import GameState from "./components/GameState";
 
