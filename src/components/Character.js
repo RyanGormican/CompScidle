@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Context } from "../App";
 
 function Character({ inputVal, charPos}) {
@@ -10,7 +10,7 @@ function Character({ inputVal, charPos}) {
   const characterState =  tileAt.charPos > charPos && (correctSpot ? "correct" : wrongSpot ? "wrongspot": "incorrect");
   
   useEffect(() => {
-    if (character != "" && !correctsSpot && !wrongSpot) {
+    if (character != "" && !correctSpot && !wrongSpot) {
      setRemoveTiles((prev) => [...prev, character]);
     }
   }, [tileAt.tileattemp] );
