@@ -9,7 +9,7 @@ export const Context = createContext();
 function App() {
     const [tiles, setTiles] = useState(tileDefault);
     const [tileAt, setTileAt] = useState{{ charPos: 0, tileattemp: 0 });
-                                         
+    const theWord = "CODER"                              
     const setChar = (InputValue) => {
            if (tileAt.charPos > 4) return;
          const tileState =  [...tiles];
@@ -36,7 +36,7 @@ function App() {
     <h1> CompScidle
     </h1>
     </nav>
-      <Context.Provider value ={{tiles, setTiles, tileAt, setTileAt, setChar, deleteChar, setWord}}>
+      <Context.Provider value ={{tiles, setTiles, tileAt, setTileAt, setChar, deleteChar, setWord, theWord}}>
     <div className="space">
     <Tiles />
     <Input />
