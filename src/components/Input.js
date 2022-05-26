@@ -1,6 +1,6 @@
 import React, {useCallback, useContext, useEffect } from "react";
 import InputKey from "./InputKey";
-   import { Context } from "../App";
+import { Context } from "../App";
 function Input(){
  const { setChar, deleteChar, setWord} = useContext(Context);
    const topkeys = ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"];
