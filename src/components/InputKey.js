@@ -1,11 +1,10 @@
 import React, { useContext } from "react";
 import { Context } from "../App";
 function InputKey({ InputValue, specialInput }) {
- const { tiles,setTiles, tileAt, setTileAt} = useContext(Context);
+ const { tiles,setTiles, tileAt, setTileAt, setChar, deleteChar, setWord} = useContext(Context);
   const getKey = () => {
     if (InputValue === "ENTER"){
-        if (tileAt.charPos !== 5) return;
-       setTileAt({tileattemp: tileAt.tileattemp +1, charPos: 0 });
+    setWord()
     }
    else if(InputValue === "DELETE"){
     if (tileAt.charPos === 0) return;
@@ -16,11 +15,7 @@ function InputKey({ InputValue, specialInput }) {
    }
    else
    {
-   if (tileAt.charPos > 4) return;
-    const tileState =  [...tiles];
-    tileState[tileAt.tileattemp][tileAt.charPos]= InputValue;
-    setTiles(tileState);
-   setTileAt({...tileAt, tileAt.charPos +1 });
+   setChar(InputValue);
    }
   };
   return <div className="Inputkey" id ={specialInput && "special"} onClick=(getKey)> {InputValue} </div> ;
