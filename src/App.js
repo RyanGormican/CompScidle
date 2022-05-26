@@ -9,7 +9,12 @@ export const Context = createContext();
 function App() {
     const [tiles, setTiles] = useState(tileDefault);
     const [tileAt, setTileAt] = useState{{ charPos: 0, tileattemp: 0 });
-    const theWord = "CODER"                              
+    const [tileSet, setTileSet] = useState(new Set());
+    const theWord = "CODER";
+  useEffect(() => {
+     getTileSet().then((words)=> {
+       setTileSet(words.tileSet
+  }, []);
     const setChar = (InputValue) => {
            if (tileAt.charPos > 4) return;
          const tileState =  [...tiles];
