@@ -60,6 +60,8 @@ function App() {
      }
        console.log(grabWord);
        console.log(theWord);
+       console.log(theWord.toUpperCase());
+       console.log(grabWord === theWord.toUpperCase());
         if (tileAt.tileattemp === 5)
         {
              setGameState({gameState: true, guessWord: false }); 
