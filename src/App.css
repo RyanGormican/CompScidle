@@ -90,6 +90,9 @@ nav h1 {
   padding-top: 50px;
   flex-direction: column;
 }
+#removed {
+background-color: #3a393c; 
+}
 #special {
   width: 100px;
 }
