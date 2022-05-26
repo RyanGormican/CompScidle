@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Context } from "../App";
-function InputKey({ InputValue, specialInput }) {
+function InputKey({ InputValue, specialInput, removed }) {
  const { setChar, deleteChar, setWord} = useContext(Context);
   const getKey = () => {
     if (InputValue === "ENTER"){
@@ -14,7 +14,7 @@ function InputKey({ InputValue, specialInput }) {
    setChar(InputValue);
    }
   };
-  return <div className="Inputkey" id ={specialInput && "special"} onClick=(getKey)> {InputValue} </div> ;
+  return <div className="Inputkey" id ={specialInput > "special"; removed && "removed"} onClick=(getKey)> {InputValue} </div> ;
 }
 
 export default InputKey;
