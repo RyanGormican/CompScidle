@@ -1,5 +1,5 @@
-import tileSet from "../wordbank.txt";
-import todaySet from "../todaybank.txt";
+import tileSets from "../wordbank.txt";
+import todaySets from "../todaybank.txt";
 export const tileDefault = [
 ["","","","",""],
 ["","","","",""],
@@ -10,7 +10,7 @@ export const tileDefault = [
 ];
 export const getTileSet = async () => {
  let tileSet;
- await fetch(tileSet).then((response) => response.text()).then((result) =>{
+ await fetch(tileSets).then((response) => response.text()).then((result) =>{
   const tileArray = result.split("\n");
   tileSet = new Set(tileArray);
  });
@@ -20,9 +20,9 @@ export const getTileSet = async () => {
 export const getWord = async () => {
  let todaySet;
  let todayWord;
- await fetch(todaySet).then((response) => response.text()).then((result) =>{
+ await fetch(todaySets).then((response) => response.text()).then((result) =>{
   const todaySet = result.split("\n");
-  todayWord = todaySet[Math.floor(Math.random() * todaySet.length)]
+  todayWord = todaySet[Math.floor(Math.random() * todaySets.length)]
   todaySet = new Set(todaySet);
  });
  return { todaySet, todayWord};
