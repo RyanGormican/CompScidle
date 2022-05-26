@@ -14,16 +14,13 @@ export const getTileSet = async () => {
   const tileArray = result.split("\n");
   tileSet = new Set(tileArray);
  });
- return { tileSet };
-};
-
-export const getWord = async () => {
- let todaySet;
+  let todaySet;
  let todayWord;
  await fetch(todaySets).then((response) => response.text()).then((result) =>{
   const todaySet = result.split("\n");
   todayWord = todaySet[Math.floor(Math.random() * todaySets.length)]
   todaySet = new Set(todaySet);
  });
- return { todaySet, todayWord};
+ return { tileSet,todayWord };
 };
+
