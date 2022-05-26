@@ -61,7 +61,8 @@ function App() {
       <Context.Provider value ={{tiles, setTiles, tileAt, setTileAt, setChar, deleteChar, setWord, theWord, removeTiles, setRemoveTiles, gameState, setGameState}}>
     <div className="space">
     <Tiles />
-    <Input />
+                       
+     {gameState.gameState? <GameState /> : <Input />
      </div>
       </Context.Provider>
     </div>
