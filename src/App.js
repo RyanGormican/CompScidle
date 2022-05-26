@@ -9,6 +9,27 @@ export const Context = createContext();
 function App() {
     const [tiles, setTiles] = useState(tileDefault);
     const [tileAt, setTileAt] = useState{{ charPos: 0, tileattemp: 0 });
+                                         
+    const setChar = () => {
+         const tileState =  [...tiles];
+    tileState[tileAt.tileattemp][tileAt.charPos]= InputValue;
+    setTiles(tileState);
+   setTileAt({...tileAt, tileAt.charPos +1 });
+    }
+   
+    const deleteChar = () => {
+         if (tileAt.charPos === 0) return;
+        const tileState =  [...tiles];
+    tileState[tileAt.tileattemp][tileAt.charPos-1]= "";
+    setTiles(tileState);
+   setTileAt({...tileAt, tileAt.charPos -1 });
+    }
+    
+    const enterWord = () => {
+              if (tileAt.charPos !== 5) return;
+       setTileAt({tileattemp: tileAt.tileattemp +1, charPos: 0 });  
+        
+    }
   return (
     <div className="App">
     <nav>
