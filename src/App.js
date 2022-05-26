@@ -29,7 +29,7 @@ function App() {
          const tileState =  [...tiles];
     tileState[tileAt.tileattemp][tileAt.charPos]= InputValue;
     setTiles(tileState);
-   setTileAt({...tileAt, tileAt.charPos +1 });
+   setTileAt({tileattemp: tileAt.tileattemp, charPos: tileAt.charPos +1 });
     };
    
     const deleteChar = () => {
@@ -37,7 +37,7 @@ function App() {
         const tileState =  [...tiles];
     tileState[tileAt.tileattemp][tileAt.charPos-1]= "";
     setTiles(tileState);
-   setTileAt({...tileAt, tileAt.charPos -1 });
+   setTileAt({...tileAt, charPos: tileAt.charPos -1 });
     };
     
     const setWord = () => {
