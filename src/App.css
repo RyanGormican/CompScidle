@@ -84,7 +84,7 @@ nav h1 {
 }
 .space {
   height: calc(100vh - 170px);
-  width: 100vw;
+  width: 99vw;
   display: flex;
   align-items: center;
   padding-top: 50px;
