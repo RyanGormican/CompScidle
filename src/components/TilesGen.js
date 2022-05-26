@@ -8,7 +8,7 @@ export const tileDefault = [
 ["","","","",""],
 ["","","","",""],
 ];
-const getTileSet = async () => {
+export const getTileSet = async () => {
  let tileSet;
  await fetch(tileSet).then((response) => response.text()).then((result) =>{
   const tileArray = result.split("\n");
