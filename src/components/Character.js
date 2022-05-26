@@ -2,9 +2,13 @@ import React, { useContext } from "react";
 import { Context } from "../App";
 
 function Character({ inputVal, charPos}) {
-  const { tiles } = useContext(Context);
+  const { tiles, theWord } = useContext(Context);
   const character = tiles[inputVal][charPos];
-  return <div className ="character"> {character} </div>;
+  
+  const correct = theWord[charPos] === character;
+  const wrongSpot
+  const characterState =
+  return <div className ="character" id={}> {character} </div>;
     
 }
 
