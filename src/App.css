@@ -94,11 +94,11 @@ nav h1 {
 background-color: #3a393c; 
 }
 #special {
-  width: 100px;
+  width: 5vw;
 }
 .tiles {
-  height: 550px;
-  width: 450px;
+  height: 51vh;
+  width: 23vw;
   border: 1px solid black;
   display: flex;
   flex-direction: column;
