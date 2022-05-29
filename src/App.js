@@ -51,6 +51,7 @@ function App() {
        else
        {
        alert("word not in list");
+       return;
        }
 
      if (grabWord.toLowerCase() === theWord)
