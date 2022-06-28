@@ -73,9 +73,6 @@ function App() {
     <div className="App">
     <nav>
     <h1> CompScidle
-      <br>
-      </br>
-     <a href="https://github.com/RyanGormican/CompScidle"> Github </a>
     </h1>
      
     </nav>
