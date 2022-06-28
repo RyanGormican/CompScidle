@@ -73,7 +73,10 @@ function App() {
     <div className="App">
     <nav>
     <h1> CompScidle
+      <br>
+     <a href="https://github.com/RyanGormican/CompScidle"> Github </a>
     </h1>
+     
     </nav>
       <Context.Provider value ={{tiles, setTiles, tileAt, setTileAt, setChar, deleteChar, setWord, theWord, removeTiles, setRemoveTiles, gameState, setGameState}}>
     <div className="space">
