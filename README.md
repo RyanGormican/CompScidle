@@ -1,4 +1,7 @@
 # CompScidle
+
+https://compscidle.vercel.app/
+
 CompScidle is a clone of the popular New York Times game "Wordle" using the React Framework.  The user has 6 attempts to guess a 5 letter word using the keyboard onscreen or by typing on the keyboard. Words are pulled from a .txt file all centered around program and computer science-related terminology. 
 
 Components -
