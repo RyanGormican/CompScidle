@@ -5,6 +5,8 @@ import Tiles from "./components/Tiles";
 import { getTileSet,  tileDefault } from "./components/TilesGen";
 import { createContext, useEffect, useState } from "react";
 import GameState from "./components/GameState";
+import { Icon } from '@iconify/react';
+
 
 export const Context = createContext();
 function App() {
@@ -74,7 +76,14 @@ function App() {
     <nav>
     <h1> CompScidle
     </h1>
-     
+     <span>
+    <a href="https://www.linkedin.com/in/ryangormican/">
+		<Icon icon="mdi:linkedin" color="#0e76a8" width="40" />
+	</a>
+	<a href="https://github.com/RyanGormican/CompScidle">
+		<Icon icon="mdi:github" color="#e8eaea" width="40" />
+	</a>
+    </span>
     </nav>
       <Context.Provider value ={{tiles, setTiles, tileAt, setTileAt, setChar, deleteChar, setWord, theWord, removeTiles, setRemoveTiles, gameState, setGameState}}>
     <div className="space">

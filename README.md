@@ -17,3 +17,5 @@ InputKey.js - Uses the information for Input.js to process the input of the key 
 Tiles.js - Processes the state of the board using processing determined by InputKey
 
 TilesGen.js -  holds generative functionality for pieces of the game. It generates an empty board, a word to guess, and a set of words. The set of words is used to determine whether a word guessed is a valid word.
+
+[Linkedin](https://www.linkedin.com/in/ryangormican/)
