@@ -52,7 +52,7 @@ function App() {
        }
        else
        {
-       alert("word not in list");
+       alert("The word inputted is not a valid word");
        return;
        }
 
