@@ -83,6 +83,9 @@ function App() {
 	<a href="https://github.com/RyanGormican/CompScidle">
 		<Icon icon="mdi:github" color="#e8eaea" width="40" />
 	</a>
+    <a href="https://ryangormicanportfoliohub.vercel.app/">
+		<Icon icon="teenyicons:computer-outline" color="#199c35" width="40" />
+	</a>
     </span>
     </nav>
       <Context.Provider value ={{tiles, setTiles, tileAt, setTileAt, setChar, deleteChar, setWord, theWord, removeTiles, setRemoveTiles, gameState, setGameState}}>
